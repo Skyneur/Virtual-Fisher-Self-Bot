@@ -3,8 +3,8 @@ from discord.ext import tasks, commands  # Ajoutez commands
 import re
 
 # Ton token personnel (UTILISATION À TES RISQUES ET PÉRILS)
-TOKEN = "VOTRE TOKEN"  # Supprimez cette ligne
-CHANNEL_ID = ID SERVEUR  # ID du canal où se trouve le bot "Virtual Fisher"
+TOKEN = "VOTRE TOKEN"
+CHANNEL_ID = ID DU CHANNEL  # ID du canal où se trouve le bot "Virtual Fisher"
 BUTTON_LABEL = "Fish Again"  # Nom du bouton à cliquer
 
 # Initialisation du bot en mode self-bot
@@ -94,6 +94,6 @@ async def on_message(message):
 
 # Lancer le bot
 try:
-    bot.run("VOTRE TOKEN")  # Remplacez par le token directement ici ou utilisez une variable d'environnement
+    bot.run(TOKEN)  # Utilisez la variable TOKEN définie en haut du fichier
 except Exception as e:
     print(f"[❌] Erreur lors de la connexion : {e}")
